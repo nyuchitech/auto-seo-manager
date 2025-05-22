@@ -5,11 +5,15 @@
 [![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-blue.svg)](https://wordpress.org/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://php.net/)
 [![License](https://img.shields.io/badge/License-GPL%20v2-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
-[![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)](https://github.com/yourusername/auto-seo-manager)
+[![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)](https://github.com/nyuchitech/auto-seo-manager)
 
 ## 🚀 Overview
 
 Auto SEO Manager is a powerful WordPress plugin that automatically generates and manages SEO data for your entire website. It works seamlessly with Yoast SEO while adding comprehensive meta tags, Open Graph data, Twitter Cards, and advanced automation features.
+
+**Developed by:** [Nyuchi Web Services](https://nyuchi.com)  
+**Lead Developer:** Bryan Fawcett ([@bryanfawcett](https://github.com/bryanfawcett))  
+**Repository:** [GitHub - Auto SEO Manager](https://github.com/nyuchitech/auto-seo-manager)
 
 ### Key Features
 
@@ -522,7 +526,8 @@ This plugin is licensed under the [GPL v2 or later](https://www.gnu.org/licenses
 
 ```
 Auto SEO Manager WordPress Plugin
-Copyright (C) 2025 Your Name
+Copyright (C) 2025 Nyuchi Web Services
+Developed by Bryan Fawcett (@bryanfawcett)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -541,16 +546,26 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 
 ## 👥 Credits
 
-**Author**: Your Name  
-**Contributors**: [Contributors List](https://github.com/yourusername/auto-seo-manager/contributors)  
+**Company**: [Nyuchi Web Services](https://nyuchi.com)  
+**Lead Developer**: Bryan Fawcett ([@bryanfawcett](https://github.com/bryanfawcett))  
+**Contributors**: [Contributors List](https://github.com/nyuchitech/auto-seo-manager/contributors)  
 **Inspiration**: WordPress community and SEO best practices
+
+### About Nyuchi Web Services
+
+Nyuchi Web Services specializes in WordPress development, SEO optimization, and web automation solutions. We create tools that help businesses improve their online presence through intelligent automation and best-practice implementations.
+
+- **Website**: [https://nyuchi.com](https://nyuchi.com)
+- **GitHub**: [https://github.com/nyuchitech](https://github.com/nyuchitech)
+- **WordPress Plugins**: Professional WordPress development and SEO solutions
 
 ## 📞 Support
 
-- **Documentation**: [GitHub Wiki](https://github.com/yourusername/auto-seo-manager/wiki)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/auto-seo-manager/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/auto-seo-manager/discussions)
-- **Support Forum**: [WordPress.org Support](https://wordpress.org/support/plugin/auto-seo-manager)
+- **Documentation**: [GitHub Repository](https://github.com/nyuchitech/auto-seo-manager/blob/main/README.md)
+- **Issues**: [GitHub Issues](https://github.com/nyuchitech/auto-seo-manager/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/nyuchitech/auto-seo-manager/discussions)
+- **Professional Support**: [Nyuchi Web Services](https://nyuchi.com)
+- **Developer Contact**: Bryan Fawcett [@bryanfawcett](https://github.com/bryanfawcett)
 
 ## 🌟 Show Your Support
 
@@ -564,4 +579,6 @@ If this plugin has helped your website's SEO, please:
 
 ---
 
-**Made with ❤️ for the WordPress community**
+**Made with ❤️ by [Nyuchi Web Services](https://nyuchi.com) for the WordPress community**
+
+*Developed by Bryan Fawcett ([@bryanfawcett](https://github.com/bryanfawcett)) - Specializing in WordPress SEO automation and web development solutions.*
