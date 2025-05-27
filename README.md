@@ -6,50 +6,85 @@
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://php.net/)
 [![License](https://img.shields.io/badge/License-GPL%20v2-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 [![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)](https://github.com/nyuchitech/auto-seo-manager)
+[![Tested](https://img.shields.io/badge/Tested%20up%20to-WordPress%206.4-brightgreen.svg)](https://wordpress.org/)
 
 ## 🚀 Overview
 
-Auto SEO Manager is a powerful WordPress plugin that automatically generates and manages SEO data for your entire website. It works seamlessly with Yoast SEO while adding comprehensive meta tags, Open Graph data, Twitter Cards, and advanced automation features.
+Auto SEO Manager is a powerful WordPress plugin that automatically generates and manages comprehensive SEO data for your entire website. It works seamlessly with Yoast SEO while adding advanced meta tags, Open Graph data, Twitter Cards, WooCommerce product optimization, and intelligent automation features.
+
+**Perfect for agencies, developers, and site owners** who want comprehensive SEO automation without manual intervention.
 
 **Developed by:** [Nyuchi Web Services](https://nyuchi.com)  
 **Lead Developer:** Bryan Fawcett ([@bryanfawcett](https://github.com/bryanfawcett))  
 **Repository:** [GitHub - Auto SEO Manager](https://github.com/nyuchitech/auto-seo-manager)
 
-### Key Features
+---
 
-- ✅ **Automated SEO Generation** - Titles, descriptions, and keywords
-- ✅ **Comprehensive Meta Tags** - All essential SEO meta tags  
-- ✅ **Social Media Optimization** - Open Graph and Twitter Cards
-- ✅ **Yoast SEO Integration** - Works alongside existing Yoast data
-- ✅ **Plugin Integrations** - WooCommerce, ACF, Elementor, Events Calendar, and more
-- ✅ **Scheduled Automation** - Daily processing with external cron support
-- ✅ **Integration Management** - Easy enable/disable for each plugin integration
-- ✅ **Performance Optimized** - Batch processing for large sites
-- ✅ **Monitoring & Logging** - Comprehensive activity tracking
-- ✅ **Testing Tools** - Built-in validation and debugging utilities
+## ✨ Key Features
+
+### 🔧 **Core Automation**
+- ✅ **Automated SEO Generation** - Titles, descriptions, and keywords from content
+- ✅ **Yoast SEO Integration** - Works alongside existing Yoast data without conflicts
+- ✅ **Scheduled Processing** - Daily automation with external cron support
+- ✅ **Batch Processing** - Efficient handling of large sites (1000+ posts)
+- ✅ **Smart Detection** - Only processes content missing SEO data
+
+### 🏷️ **Comprehensive Meta Tags**
+- ✅ **Basic SEO Tags** - Description, keywords, author, robots
+- ✅ **Open Graph Tags** - Complete social media optimization
+- ✅ **Twitter Cards** - Enhanced Twitter sharing with large images
+- ✅ **Schema Markup** - Structured data for better search results
+- ✅ **Google Verification** - Search Console integration
+
+### 🔌 **Plugin Integrations**
+- ✅ **WooCommerce** - Product SEO with pricing, inventory, categories
+- ✅ **Advanced Custom Fields** - Use ACF fields for SEO data
+- ✅ **Elementor** - Extract content from page builder elements
+- ✅ **Beaver Builder** - Page builder content analysis
+- ✅ **The Events Calendar** - Event-specific SEO with dates/venues
+- ✅ **WPML/Polylang** - Multi-language SEO support
+- ✅ **Gutenberg Blocks** - Modern block editor content extraction
+- ✅ **Custom Post Types** - Support for any post type
+
+### 🎛️ **Management Interface**
+- ✅ **Visual Integration Management** - Easy enable/disable for each plugin
+- ✅ **Activity Monitoring** - Comprehensive logging and reporting
+- ✅ **Manual Tools** - Bulk updates and meta tag preview
+- ✅ **Testing Utilities** - Built-in validation and debugging
+- ✅ **Performance Monitoring** - Track processing times and success rates
+
+---
 
 ## 📋 Requirements
 
-- **WordPress**: 5.0 or higher
-- **PHP**: 7.4 or higher  
-- **Yoast SEO**: Required (free or premium)
-- **Memory**: 128MB+ recommended
-- **Server**: Apache/Nginx with mod_rewrite
+| Component | Version | Status |
+|-----------|---------|--------|
+| **WordPress** | 5.0+ | Required |
+| **PHP** | 7.4+ | Required |
+| **Yoast SEO** | Any version | Required |
+| **Memory** | 128MB+ | Recommended |
+| **Server** | Apache/Nginx | Required |
+
+---
 
 ## 🔧 Installation
 
-### Method 1: Manual Installation
+### Method 1: GitHub Release (Recommended)
 
-1. **Download** the latest release from GitHub
-2. **Extract** the files to `/wp-content/plugins/auto-seo-manager/`
-3. **Activate** the plugin through WordPress Admin → Plugins
-4. **Configure** settings at Settings → Auto SEO Manager
+1. **Download** the latest release ZIP from [GitHub Releases](https://github.com/nyuchitech/auto-seo-manager/releases)
+2. **Upload** via WordPress Admin → Plugins → Add New → Upload Plugin
+3. **Activate** the plugin
+4. **Configure** at Settings → Auto SEO Manager
 
-### Method 2: WordPress Admin Upload
+### Method 2: Manual Installation
 
-1. **Download** the plugin ZIP file
-2. **Upload** via WordPress Admin → Plugins → Add New → Upload
-3. **Activate** and configure
+1. **Clone** or download this repository
+   ```bash
+   git clone https://github.com/nyuchitech/auto-seo-manager.git
+   ```
+2. **Upload** the folder to `/wp-content/plugins/auto-seo-manager/`
+3. **Activate** through WordPress Admin → Plugins
+4. **Configure** settings
 
 ### Required Files Structure
 ```
@@ -57,472 +92,407 @@ Auto SEO Manager is a powerful WordPress plugin that automatically generates and
 ├── auto-seo-manager.php          # Main plugin file
 ├── admin-page.php                # Admin interface
 ├── integrations.php              # Plugin integrations
-├── meta-tags-test.php           # Testing utility
-├── README.md                    # Documentation
-└── LICENSE                      # GPL v2 License
+├── meta-tags-test.php           # Testing utility (optional)
+├── README.md                    # This documentation
+├── LICENSE                      # GPL v2 License
+└── installation-guide.md        # Detailed setup guide
 ```
 
-## ⚙️ Configuration
+---
 
-### Basic Setup
+## ⚙️ Quick Setup Guide
 
-1. **Enable Auto SEO**: Check the main enable checkbox
-2. **Select Post Types**: Choose which content to process
-3. **Configure Templates**: Set SEO title patterns
-4. **Set Author Info**: Add your name and contact details
-5. **Enable Features**: Turn on meta tags, Open Graph, Twitter Cards
-6. **Configure Integrations**: Enable/disable plugin integrations as needed
+### 1. **Basic Configuration**
+1. Go to **Settings → Auto SEO Manager**
+2. ✅ Check **"Enable Auto SEO"**  
+3. Select **post types** to process (posts, pages, products, etc.)
+4. Set **meta description length** (155 characters recommended)
+5. Add your **email** for weekly audit reports
 
-### Plugin Integrations
+### 2. **Meta Tags Setup**
+1. ✅ Enable **"Additional Meta Tags"**
+2. Set **site author** name
+3. Add **Google site verification** token
+4. Configure **default robots** setting (index, follow)
 
-Auto SEO Manager includes a comprehensive integration system with visual management:
+### 3. **Social Media Setup**
+1. ✅ Enable **"Open Graph Tags"**
+2. Set **default OG image** URL (1200x630px recommended)
+3. ✅ Enable **"Twitter Cards"**
+4. Add your **Twitter username** (without @)
 
-#### Available Integrations
+### 4. **Integration Setup**
+1. Go to **Integrations tab**
+2. **Review available integrations** - automatically detects installed plugins
+3. **Toggle integrations** on/off as needed
+4. **Save integration settings**
 
-🛒 **WooCommerce Integration**
-- Product-specific title templates with pricing placeholders
-- Enhanced descriptions with inventory and pricing information
-- Product category and attribute keyword extraction
-- Schema markup for better search engine understanding
-
-🔧 **Advanced Custom Fields (ACF) Integration**  
-- Use custom fields for SEO descriptions (`seo_description`)
-- Extract focus keywords from ACF fields (`seo_keywords`)
-- Integrate summary and excerpt fields
-- Support for custom meta data structures
-
-🎨 **Elementor Integration**
-- Extract text content from Elementor widgets and sections
-- Parse page builder data for SEO content generation
-- Enhanced SEO support for builder-created pages
-
-🏗️ **Beaver Builder Integration**
-- Content extraction from Beaver Builder layouts
-- Widget text parsing and analysis
-- Layout-aware SEO generation
-
-📅 **The Events Calendar Integration**
-- Event-specific title templates with date placeholders
-- Venue information integration in descriptions
-- Event meta data optimization
-- Calendar-specific SEO enhancements
-
-🌐 **WPML/Polylang Integration**
-- Multi-language SEO template support
-- Localized meta description generation
-- Language-specific keyword extraction
-- Regional SEO optimization
-
-📝 **Gutenberg Blocks Integration**
-- Advanced content extraction from block editor
-- Block-specific text analysis
-- Modern editor content parsing
-
-📋 **Custom Post Type UI Integration**
-- Support for custom post types and taxonomies
-- Extended SEO templates for custom content
-- Custom field integration and support
-
-#### Integration Management
-
-The plugin features a dedicated **Integrations tab** with:
-
-- **Visual Plugin Cards**: See all available integrations at a glance
-- **Toggle Switches**: Easy enable/disable for each integration
-- **Status Indicators**: Clear visual feedback for plugin availability
-- **Feature Lists**: Detailed information about each integration's capabilities
-- **Installation Guidance**: Helper text for unavailable plugins
-- **Integration Testing**: Built-in test tool to verify functionality
-
-### Advanced Configuration
-
-```php
-// Custom title templates
-$templates = array(
-    'post' => '%%title%% | Expert Guide | %%sitename%%',
-    'page' => '%%title%% | %%sitename%%',
-    'product' => '%%title%% - Best Price | %%sitename%%'
-);
-
-// Available placeholders
-%%title%%        // Post/page title
-%%sitename%%     // Site name
-%%currentdate%%  // Current year
-%%category%%     // Primary category
-%%location%%     // Business location (if set)
-%%price%%        // Product price (WooCommerce)
-```
-
-### External Cron Setup
-
-For reliable automation, set up server-level cron:
-
-```bash
-# Daily execution at 2 AM
-0 2 * * * curl -s "https://yoursite.com/auto-seo-cron/YOUR-SECRET-KEY" > /dev/null
-```
-
-## 🎯 Usage
-
-### Automatic Processing
-
-The plugin automatically:
-
-1. **Scans content daily** for missing SEO data
-2. **Generates meta tags** using your templates and content analysis
-3. **Creates social media tags** for better sharing
-4. **Extracts keywords** from content, categories, and tags
-5. **Logs all activities** for monitoring and debugging
-6. **Sends weekly reports** with audit findings
-
-### Manual Tools
-
-- **Bulk Update**: Process all content immediately
-- **Meta Preview**: See generated tags before publishing
-- **Test Utility**: Comprehensive validation and debugging
-- **Activity Monitor**: Track all plugin operations
-
-### Generated Meta Tags
-
-```html
-<!-- Basic SEO -->
-<meta name="description" content="Auto-generated description">
-<meta name="keywords" content="extracted, keywords, here">
-<meta name="author" content="Your Name">
-<meta name="robots" content="index, follow">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Page Title">
-<meta property="og:description" content="Social description">
-<meta property="og:image" content="Featured image URL">
-<meta property="og:url" content="Page URL">
-
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@yourusername">
-<meta name="twitter:title" content="Page Title">
-<meta name="twitter:description" content="Social description">
-```
+---
 
 ## 🔌 Plugin Integrations
 
-### Supported Plugins
+### 🛒 **WooCommerce Integration**
+Transform your product SEO with automated enhancements:
 
-- **WooCommerce** - Enhanced product SEO with pricing and inventory
-- **Advanced Custom Fields** - Use ACF fields for SEO data
-- **Elementor** - Extract content from Elementor pages
-- **Beaver Builder** - Page builder content extraction
-- **The Events Calendar** - Event-specific SEO optimization
-- **WPML/Polylang** - Multilingual SEO support
-- **Custom Post Type UI** - Support for custom post types
+**Features:**
+- Product-specific title templates with pricing placeholders
+- Enhanced descriptions with inventory status and pricing
+- Category and attribute keyword extraction
+- Schema markup for rich product snippets
+- Sale status integration in meta descriptions
 
-### WooCommerce Integration
-
+**Title Placeholders:**
 ```php
-// Product-specific placeholders
-%%price%%           // Product price
+%%price%%           // Product price: $29.99
 %%sale%%            // "On Sale" if applicable
-%%stock%%           // Stock status
+%%stock%%           // "In Stock" or "Out of Stock"
 %%product_category%% // Primary product category
-
-// Example product title template
-'product' => '%%title%% - %%price%% | %%product_category%% | %%sitename%%'
 ```
 
-**Enhanced Product SEO Features:**
-- Automatic pricing information in titles and descriptions
-- Product category and attribute keyword extraction
-- Inventory status integration ("In Stock" / "Out of Stock")
-- Schema markup for rich search results
-- Sale status highlighting in meta descriptions
+**Example Templates:**
+```php
+// Product page
+'%%title%% - %%price%% | %%product_category%% | %%sitename%%'
+// Result: "Gaming Laptop - $899.99 | Electronics | Your Store"
+```
 
-### Advanced Custom Fields Integration
+### 🔧 **Advanced Custom Fields Integration**
+Leverage your custom fields for SEO automation:
+
+**Supported Field Names:**
+- `seo_description` - Override auto-generated descriptions
+- `seo_keywords` - Custom focus keywords
+- `focus_keywords` - Alternative keyword field
+- `summary` - Page summary content
+- `excerpt` - Custom excerpt field
+- `og_title` - Custom Open Graph title
+- `og_description` - Custom OG description
+- `og_image` - Custom OG image
+
+**Priority System:**
+1. ACF custom fields (highest priority)
+2. Yoast SEO existing data
+3. Auto-generated content (fallback)
+
+### 🎨 **Page Builder Integrations**
+
+**Elementor Integration:**
+- Extracts text from all Elementor widgets and sections
+- Parses page builder data for comprehensive content analysis
+- Works with any Elementor layout or template
+
+**Beaver Builder Integration:**
+- Processes Beaver Builder modules and content
+- Extracts text from all builder elements
+- Maintains layout-aware SEO generation
+
+### 📅 **Events Calendar Integration**
+Perfect for event websites and venues:
+
+**Event Placeholders:**
+```php
+%%event_date%%    // Event start date: "March 15, 2024"
+%%event_venue%%   // Venue name: "Madison Square Garden"
+%%event_time%%    // Event time: "7:00 PM"
+```
+
+**Auto-Generated Content:**
+- Event dates in titles and descriptions
+- Venue information integration
+- Calendar-specific meta optimization
+
+### 🌐 **Multi-Language Support**
+**WPML Integration:**
+- Language-specific title templates
+- Localized meta descriptions
+- Regional SEO optimization
+
+**Polylang Integration:**
+- Multi-language keyword extraction
+- Language-aware content processing
+- Localized social media tags
+
+---
+
+## 🎯 Usage Examples
+
+### **Automated Processing**
+The plugin runs automatically and:
+1. **Scans daily** for content missing SEO data
+2. **Generates titles** using your custom templates
+3. **Creates descriptions** from content or excerpts
+4. **Extracts keywords** from content, categories, tags
+5. **Logs activities** for monitoring and debugging
+6. **Sends weekly reports** with SEO audit findings
+
+### **Manual Tools**
+Access powerful manual tools for immediate results:
+
+- **🔄 Bulk Update**: Process all content immediately
+- **👁️ Meta Preview**: See generated tags before publishing  
+- **🧪 Test Utility**: Comprehensive validation and debugging
+- **📊 Activity Monitor**: Track all plugin operations
+- **⚙️ System Info**: Integration status and scheduling details
+
+### **Generated Meta Tags Example**
+```html
+<!-- Basic SEO Tags -->
+<meta name="description" content="Complete guide to WordPress SEO automation with step-by-step instructions and expert tips.">
+<meta name="keywords" content="wordpress, seo, automation, guide, optimization, meta tags">
+<meta name="author" content="Your Name">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="your_verification_token">
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="WordPress SEO Automation Guide | Your Site">
+<meta property="og:description" content="Complete guide to WordPress SEO automation with expert tips.">
+<meta property="og:image" content="https://yoursite.com/images/seo-guide.jpg">
+<meta property="og:url" content="https://yoursite.com/wordpress-seo-guide">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Your Site Name">
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@yourusername">
+<meta name="twitter:title" content="WordPress SEO Automation Guide">
+<meta name="twitter:description" content="Complete guide to WordPress SEO automation.">
+<meta name="twitter:image" content="https://yoursite.com/images/seo-guide.jpg">
+```
+
+---
+
+## 🛠️ Advanced Configuration
+
+### **Custom Title Templates**
+Create dynamic, SEO-optimized titles for each post type:
 
 ```php
-// Supported ACF field names
-seo_description    // Custom meta description
-seo_keywords      // Focus keywords
-focus_keywords    // Alternative keyword field
-summary           // Page summary content
-excerpt           // Custom excerpt field
+// Available placeholders
+%%title%%        // Post/page title
+%%sitename%%     // Your site name  
+%%currentdate%%  // Current year
+%%category%%     // Primary category
+%%author%%       // Post author name
+
+// Example templates
+'post' => '%%title%% | Expert Guide | %%sitename%%'
+'page' => '%%title%% | %%sitename%% | %%currentdate%%'
+'product' => '%%title%% - Best Price | %%sitename%%'
+'event' => '%%title%% | %%event_date%% | %%sitename%%'
 ```
 
-**ACF Integration Benefits:**
-- Priority given to ACF fields over auto-generated content
-- Seamless integration with existing ACF setups
-- Support for complex field structures
-- Custom content prioritization
+### **External Cron Setup** (Recommended)
+For reliable automation on high-traffic sites:
 
-### Events Calendar Integration
+```bash
+# Add to your server's crontab
+# Daily execution at 2 AM
+0 2 * * * curl -s "https://yoursite.com/auto-seo-cron/YOUR-SECRET-KEY" > /dev/null
 
+# Alternative: cPanel Cron Jobs
+# Command: curl -s "https://yoursite.com/auto-seo-cron/YOUR-SECRET-KEY"
+# Schedule: Daily at 02:00
+```
+
+### **Performance Optimization**
 ```php
-// Event-specific placeholders
-%%event_date%%    // Event start date
-%%event_venue%%   // Venue name
-%%event_time%%    // Event time
+// Recommended settings for different site sizes
 
-// Example event title template
-'tribe_events' => '%%title%% | %%event_date%% at %%event_venue%% | %%sitename%%'
+// Small sites (<500 posts)
+Batch Size: 50-100 posts
+Memory Limit: 128MB+
+Execution Time: 60 seconds
+
+// Medium sites (500-2000 posts)  
+Batch Size: 25-50 posts
+Memory Limit: 256MB+
+Execution Time: 120 seconds
+
+// Large sites (2000+ posts)
+Batch Size: 10-25 posts
+Memory Limit: 512MB+
+Execution Time: 300 seconds
 ```
 
-### Integration Management Interface
-
-The plugin includes a visual integration management system:
-
-1. **Automatic Detection**: Scans for installed and active plugins
-2. **Visual Cards**: Each integration displayed in organized cards
-3. **Toggle Controls**: Easy enable/disable switches
-4. **Status Indicators**: Clear availability and activation status
-5. **Testing Tools**: Built-in integration testing functionality
-6. **Feature Documentation**: Detailed capability descriptions
-
-### Custom Integrations
-
-Developers can add custom integrations:
-
-```php
-// Register custom integration
-auto_seo_register_integration('my_plugin', function() {
-    add_filter('auto_seo_title_generation', 'my_custom_titles', 10, 2);
-    add_filter('auto_seo_meta_description', 'my_custom_descriptions', 10, 2);
-});
-```
+---
 
 ## 🔍 Testing & Debugging
 
-### Built-in Test Utility
-
-Access the comprehensive testing tool:
+### **Built-in Test Utility**
+Access comprehensive testing at:
 ```
 yoursite.com/wp-admin/admin.php?page=auto-seo-manager&test_meta=1
 ```
 
 **Test Features:**
-- Plugin status verification
-- Sample meta tag generation
-- Performance benchmarking
-- Configuration validation
-- Conflict detection
-- Integration testing
+- ✅ Plugin status verification
+- ✅ Sample meta tag generation  
+- ✅ Performance benchmarking
+- ✅ Configuration validation
+- ✅ Integration testing
+- ✅ Conflict detection
 
-### Integration Testing
+### **Integration Testing**
+1. Go to **Settings → Auto SEO Manager → Tools tab**
+2. Click **"Run Manual Update"** to test processing
+3. Check **Activity Log tab** for integration activity
+4. Verify **System Information** shows active integrations
+5. Use **Meta Preview** to see generated tags
 
-The plugin includes built-in integration testing:
-
-1. **Go to Settings** → Auto SEO Manager → **Tools tab**
-2. **Click "Test Integrations"** button
-3. **Review results** for each available integration:
-   - ✅ **Active**: Plugin installed and integration enabled
-   - ⏸️ **Available but Disabled**: Plugin installed but integration disabled
-   - ❌ **Not Available**: Plugin not installed or activated
-
-### Admin Interface Testing
-
-**Settings Tab:**
-- Basic plugin configuration
-- Meta tags settings
-- Social media options
-
-**Integrations Tab:**
-- Visual plugin detection
-- Enable/disable toggles
-- Integration status overview
-- Feature documentation
-
-**Activity Log Tab:**
-- Plugin operation history
-- Integration initialization logs
-- Error tracking and reporting
-
-**Tools Tab:**
-- Manual update execution
-- Meta preview functionality
-- Integration testing
-- System information display
-
-### Debugging Tips
-
+### **Debug Mode**
+Enable detailed logging in `wp-config.php`:
 ```php
-// Enable WordPress debugging
 define('WP_DEBUG', true);
 define('WP_DEBUG_LOG', true);
 
-// Check plugin logs
+// Check logs
 tail -f /wp-content/debug.log | grep "Auto SEO"
-
-// Test meta generation manually
-do_action('daily_seo_update');
 ```
+
+---
 
 ## 📊 Performance & Optimization
 
-### Performance Features
-
-- **Batch Processing**: Handles large sites efficiently
-- **Memory Management**: Dynamic batch sizing based on available resources
-- **Caching Integration**: Works with popular caching plugins
+### **Efficiency Features**
+- **Smart Batch Processing**: Handles large sites without timeouts
+- **Memory Management**: Dynamic batch sizing based on available resources  
+- **Caching Integration**: Compatible with popular caching plugins
 - **Database Optimization**: Indexed logging table for fast queries
+- **Resource Monitoring**: Tracks memory usage and execution times
 
-### Recommended Settings
+### **Site Impact**
+- **Minimal Resource Usage**: Processes during low-traffic periods
+- **Non-Blocking Operation**: Doesn't affect frontend performance
+- **Graceful Fallbacks**: Continues working if integrations fail
+- **Error Recovery**: Automatically retries failed operations
 
-```php
-// Large sites (1000+ posts)
-Batch Size: 25-50 posts
-Memory Limit: 256MB+
-Execution Time: 300 seconds
+---
 
-// Small-medium sites (<1000 posts)  
-Batch Size: 50-100 posts
-Memory Limit: 128MB+
-Execution Time: 60 seconds
-```
+## 🛡️ Security Features
 
-## 🛡️ Security
+### **Built-in Security**
+- ✅ **Nonce verification** for all admin actions
+- ✅ **Capability checks** for user permissions  
+- ✅ **Input sanitization** for all settings
+- ✅ **Secret cron keys** for external automation
+- ✅ **SQL injection prevention** with prepared statements
 
-### Security Features
-
-- **Nonce verification** for all admin actions
-- **Capability checks** for user permissions
-- **Input sanitization** for all settings
-- **Secret cron keys** for external automation
-- **SQL injection prevention** with prepared statements
-
-### Best Practices
-
-- Keep WordPress and plugins updated
-- Use strong admin passwords
-- Limit admin access appropriately
-- Monitor activity logs regularly
+### **Best Practices**
+- Keep WordPress and plugins updated regularly
+- Use strong admin passwords and 2FA
+- Limit admin access to trusted users only
+- Monitor activity logs for unusual behavior
 - Use HTTPS for all admin operations
+
+---
 
 ## 🔧 Troubleshooting
 
-### Common Issues
+### **Common Issues & Solutions**
 
-**Plugin not generating meta tags:**
-- Verify Yoast SEO is active
-- Check that "Auto Additional Meta" is enabled
-- Ensure post types are selected in settings
-- Run manual update to test
+| Issue | Symptoms | Solution |
+|-------|----------|----------|
+| **Plugin not generating meta tags** | No meta tags in source | ✅ Verify Yoast SEO is active<br>✅ Enable "Auto Additional Meta"<br>✅ Check post types are selected |
+| **Settings being erased** | Options reset after saving | ✅ Update to latest version<br>✅ Check file permissions<br>✅ Disable conflicting plugins |
+| **Integration not working** | No enhanced SEO for products/events | ✅ Verify plugin is active<br>✅ Enable integration in settings<br>✅ Check integration logs |
+| **Cron not running** | No automatic updates | ✅ Set up external cron<br>✅ Check cron URL format<br>✅ Verify secret key |
+| **Performance issues** | Slow admin/timeouts | ✅ Reduce batch size<br>✅ Increase PHP memory limit<br>✅ Use external cron |
 
-**Performance issues:**
-- Reduce batch size in settings
-- Increase PHP memory limit
-- Use external cron instead of WordPress cron
-- Check for plugin conflicts
+### **Debug Checklist**
+1. ✅ Check WordPress and PHP versions meet requirements
+2. ✅ Verify Yoast SEO is installed and active
+3. ✅ Review activity logs for error messages
+4. ✅ Test with default theme and minimal plugins
+5. ✅ Check file permissions on plugin directory
+6. ✅ Verify database table was created properly
 
-**Social media sharing not working:**
-- Verify OG image URLs are accessible
-- Check image dimensions (1200x630px minimum)
-- Test with Facebook Debugger and Twitter Card Validator
-- Clear social media caches
-
-**Cron not running:**
-- Verify external cron URL format
-- Check server cron job syntax
-- Test URL manually in browser
-- Check server error logs
-
-### Debug Mode
-
-```php
-// Add to wp-config.php for detailed logging
-define('AUTO_SEO_DEBUG', true);
-
-// Check database for logged activities
-SELECT * FROM wp_auto_seo_log ORDER BY timestamp DESC LIMIT 20;
-```
+---
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions from the community! Here's how to get involved:
 
-### Development Setup
+### **Ways to Contribute**
+- 🐛 **Bug Reports**: Help us find and fix issues
+- ✨ **Feature Requests**: Suggest new functionality
+- 📖 **Documentation**: Improve guides and examples
+- 🌐 **Translations**: Add support for new languages
+- 💻 **Code**: Submit pull requests with improvements
 
+### **Development Setup**
 ```bash
-# Clone repository
-git clone https://github.com/yourusername/auto-seo-manager.git
-
-# Set up local WordPress environment
+# Clone the repository
+git clone https://github.com/nyuchitech/auto-seo-manager.git
 cd auto-seo-manager
-wp server --host=localhost --port=8080
 
 # Install development dependencies
 composer install
 npm install
+
+# Set up local WordPress environment
+wp server --host=localhost --port=8080
 ```
 
-### Code Standards
+### **Contribution Guidelines**
+1. **Fork** the repository on GitHub
+2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
+3. **Follow** WordPress coding standards
+4. **Add** tests for new functionality
+5. **Update** documentation as needed
+6. **Submit** a pull request with detailed description
 
-- Follow WordPress coding standards
-- Include PHPDoc comments
-- Add unit tests for new features
-- Update documentation
+**Detailed Contributing Guide:** [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
 
 ## 📝 Changelog
 
-### Version 1.0.0 (2025-01-XX)
+### **Version 1.0.0** (2025-01-01)
+🎉 **Initial Release**
 
-**🎉 Initial Release**
+**🆕 New Features:**
+- ✅ Core SEO automation engine with Yoast integration
+- ✅ Comprehensive meta tags generation (description, keywords, author, robots)
+- ✅ Open Graph and Twitter Cards for social media optimization
+- ✅ Visual plugin integration system with 8+ supported plugins
+- ✅ Professional admin interface with 4-tab navigation
+- ✅ Advanced integration management with toggle controls
+- ✅ Activity logging and monitoring system
+- ✅ Built-in testing and debugging utilities
+- ✅ Performance optimization with batch processing
 
-**Added:**
-- Core SEO automation engine with Yoast integration
-- Comprehensive meta tags generation (description, keywords, author, robots)
-- Open Graph and Twitter Cards support for social media optimization
-- Visual plugin integration system with 8+ supported plugins
-- Scheduled automation with external cron support
-- Professional admin interface with 4-tab navigation (Settings, Integrations, Activity Log, Tools)
-- Advanced integration management with toggle controls
-- Activity logging and monitoring system
-- Built-in testing and debugging utilities
-- Performance optimization with batch processing
-- WooCommerce integration with product-specific SEO enhancements
-- Advanced Custom Fields integration for custom SEO data
-- Page builder support (Elementor, Beaver Builder)
-- Events Calendar integration with event-specific optimization
-- Multi-language support (WPML/Polylang)
-- Custom Post Type UI integration
+**🔌 Integrations:**
+- ✅ WooCommerce - Product SEO with pricing and inventory
+- ✅ Advanced Custom Fields - Custom field SEO data
+- ✅ Elementor - Page builder content extraction
+- ✅ Beaver Builder - Layout-aware SEO generation
+- ✅ The Events Calendar - Event-specific optimization
+- ✅ WPML/Polylang - Multi-language support
+- ✅ Gutenberg Blocks - Modern editor content extraction
+- ✅ Custom Post Type UI - Extended post type support
 
-**Integration Features:**
-- Visual plugin detection and status indicators
-- Individual integration enable/disable controls
-- Integration testing and validation tools
-- Comprehensive feature documentation for each integration
-- Smart loading system (only loads enabled integrations)
-- Integration activity logging and monitoring
+**🛠️ Technical:**
+- ✅ WordPress 5.0+ compatibility
+- ✅ PHP 7.4+ requirement
+- ✅ Database schema version 1.0
+- ✅ Comprehensive security implementations
+- ✅ Performance-optimized batch processing
 
-**Admin Interface:**
-- Modern card-based integration management
-- Toggle switches for easy control
-- Real-time status updates
-- Integration test functionality
-- Comprehensive system information display
+### **Upcoming Features (v1.1.0)**
+**🚀 Planned Additions:**
+- 📊 Advanced analytics dashboard with SEO metrics
+- 🔍 Google Search Console API integration
+- 🧪 A/B testing framework for meta tag optimization
+- 🌍 Enhanced multilingual features with RTL support
+- 🔗 REST API endpoints for headless WordPress
+- ⚡ WP-CLI commands for developers
+- 📚 Additional plugin integrations (LearnDash, GiveWP, EDD)
 
-**Technical Details:**
-- WordPress 5.0+ compatibility
-- PHP 7.4+ requirement
-- Database schema version 1.0
-- 8+ plugin integrations included
-- Comprehensive security implementations
-- Performance-optimized batch processing
-
-### Upcoming Features (v1.1.0)
-
-**Planned Additions:**
-- Enhanced schema.org markup generation with integration-specific schemas
-- Google Search Console API integration for performance monitoring
-- Advanced keyword research tools with competitor analysis
-- A/B testing framework for meta tag optimization
-- Enhanced multilingual features with RTL language support
-- REST API endpoints for headless WordPress implementations
-- WP-CLI commands for developers and automation
-- Additional plugin integrations (LearnDash, GiveWP, Easy Digital Downloads)
-- Advanced analytics and reporting dashboard
-- Custom integration builder for developers
+---
 
 ## 📄 License
 
-This plugin is licensed under the [GPL v2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
+This plugin is licensed under the **GNU General Public License v2 or later**.
 
 ```
 Auto SEO Manager WordPress Plugin
@@ -538,47 +508,80 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 ```
 
-## 👥 Credits
+**Full License:** [LICENSE](LICENSE)
 
-**Company**: [Nyuchi Web Services](https://nyuchi.com)  
-**Lead Developer**: Bryan Fawcett ([@bryanfawcett](https://github.com/bryanfawcett))  
-**Contributors**: [Contributors List](https://github.com/nyuchitech/auto-seo-manager/contributors)  
-**Inspiration**: WordPress community and SEO best practices
+---
 
-### About Nyuchi Web Services
+## 👥 Credits & About
 
+### **Development Team**
+**🏢 Company:** [Nyuchi Web Services](https://nyuchi.com)  
+**👨‍💻 Lead Developer:** Bryan Fawcett ([@bryanfawcett](https://github.com/bryanfawcett))  
+**🤝 Contributors:** [View all contributors](https://github.com/nyuchitech/auto-seo-manager/contributors)
+
+### **About Nyuchi Web Services**
 Nyuchi Web Services specializes in WordPress development, SEO optimization, and web automation solutions. We create tools that help businesses improve their online presence through intelligent automation and best-practice implementations.
 
+**🌐 Services:**
+- Custom WordPress development
+- SEO automation solutions  
+- Plugin and theme development
+- Website optimization consulting
+- Technical SEO audits
+
+**📧 Contact:**
 - **Website**: [https://nyuchi.com](https://nyuchi.com)
 - **GitHub**: [https://github.com/nyuchitech](https://github.com/nyuchitech)
-- **WordPress Plugins**: Professional WordPress development and SEO solutions
+- **Email**: [hello@nyuchi.com](mailto:hello@nyuchi.com)
 
-## 📞 Support
+---
 
-- **Documentation**: [GitHub Repository](https://github.com/nyuchitech/auto-seo-manager/blob/main/README.md)
-- **Issues**: [GitHub Issues](https://github.com/nyuchitech/auto-seo-manager/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/nyuchitech/auto-seo-manager/discussions)
-- **Professional Support**: [Nyuchi Web Services](https://nyuchi.com)
-- **Developer Contact**: Bryan Fawcett [@bryanfawcett](https://github.com/bryanfawcett)
+## 📞 Support & Resources
+
+### **Getting Help**
+
+| Type | Resource | Response Time |
+|------|----------|---------------|
+| 📚 **Documentation** | [GitHub Wiki](https://github.com/nyuchitech/auto-seo-manager/wiki) | - |
+| 🐛 **Bug Reports** | [GitHub Issues](https://github.com/nyuchitech/auto-seo-manager/issues) | 48 hours |
+| 💡 **Feature Requests** | [GitHub Discussions](https://github.com/nyuchitech/auto-seo-manager/discussions) | 1 week |
+| 🏢 **Professional Support** | [Nyuchi Web Services](https://nyuchi.com) | 24 hours |
+| 👨‍💻 **Developer Contact** | [@bryanfawcett](https://github.com/bryanfawcett) | Best effort |
+
+### **Community Resources**
+- 📖 **Installation Guide**: [installation-guide.md](installation-guide.md)
+- 🤝 **Contributing Guide**: [CONTRIBUTING.md](CONTRIBUTING.md)
+- 🔧 **Developer API**: [Wiki - Developer Documentation](https://github.com/nyuchitech/auto-seo-manager/wiki/Developer-API)
+- 📊 **Performance Tips**: [Wiki - Performance Optimization](https://github.com/nyuchitech/auto-seo-manager/wiki/Performance)
+
+---
 
 ## 🌟 Show Your Support
 
-If this plugin has helped your website's SEO, please:
+If Auto SEO Manager has helped improve your website's SEO, please consider:
 
-- ⭐ Star the repository on GitHub
-- 📝 Leave a review on WordPress.org
-- 🐛 Report bugs and suggest features
-- 💡 Contribute code improvements
-- 📢 Share with the WordPress community
+- ⭐ **Star this repository** on GitHub
+- 📝 **Leave a review** on WordPress.org (coming soon)
+- 🐛 **Report bugs** and suggest improvements
+- 💡 **Contribute code** or documentation
+- 📢 **Share** with the WordPress community
+
+### **Sponsor Development**
+Support ongoing development and new features:
+- 💖 [GitHub Sponsors](https://github.com/sponsors/bryanfawcett)
+- ☕ [Buy me a coffee](https://buymeacoffee.com/bryanfawcett)
+- 🏢 [Professional services](https://nyuchi.com)
+
+---
+
+## 🏷️ Tags
+
+`wordpress` `seo` `automation` `yoast` `meta-tags` `open-graph` `twitter-cards` `woocommerce` `elementor` `acf` `schema` `social-media` `performance` `optimization` `plugin-integration`
 
 ---
 
 **Made with ❤️ by [Nyuchi Web Services](https://nyuchi.com) for the WordPress community**
 
-*Developed by Bryan Fawcett ([@bryanfawcett](https://github.com/bryanfawcett)) - Specializing in WordPress SEO automation and web development solutions.*
+*Specializing in WordPress SEO automation and web development solutions since 2020.*
