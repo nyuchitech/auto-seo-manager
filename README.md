@@ -571,7 +571,7 @@ If Auto SEO Manager has helped improve your website's SEO, please consider:
 ### **Sponsor Development**
 Support ongoing development and new features:
 - 💖 [GitHub Sponsors](https://github.com/sponsors/bryanfawcett)
-- ☕ [Buy me a coffee](https://buymeacoffee.com/bryanfawcett)
+- ☕ [Buy me a coffee](https://buymeacoffee.com/bryany)
 - 🏢 [Professional services](https://nyuchi.com)
 
 ---
